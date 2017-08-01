@@ -1,0 +1,27 @@
+body {
+   background: rgb(153, 230, 153);
+}
+
+/*div{
+   background: rgb(255, 255, 102);
+   height: 30%;
+   width: 300px;
+}*/
+   
+ /*{
+	a dot . represents class
+	a hashtag # represents id
+ }*/
+
+.div1{
+   background: rgb(255, 255, 102);
+   height: 200px;
+   width: 80%;
+
+}
+
+#div2{
+   background: rgb(255,100,100);
+   height:200px;
+   width: 20%;
+}
