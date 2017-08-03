@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300|Annie+Use+Your+Telescope|Exo+2:200,300');
+
+body {
+   background: white;
+   font-family: 'Alegreya Sans SC', sans-serif;
+   margin: 0px;
+   padding: 0px;
+   /*div{
+   margin and padding to eliminate the white stripes in the page
+   }*/
+}
+
+#pagetitle{
+   font-family: 'Annie Use Your Telescope', cursive;
+   font-weight: 60px;
+   font-size: 90px;
+   margin-left: 100px;
+}
+
+nav {
+    background: black;
+    color: white ;
+    height: 40px;
+}
+
+nav ul {
+   height: 100%;
+   display: flex;
+   padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 33%;
+    height: 100%;
+}
+
+
+
+.div2{
+   display: block;
+   color: white;
+   margin-top: 8px;
+   font-size: 20px;
+   text-decoration: none;
+   line-height: ;
+   text-align: center;
+}
+
+.div1{
+   margin-left: 106px;
+}
+
+.div3{
+   font-family: 'Exo 2', sans-serif;
+   margin-left: 106px;
+}
+
+.div4{
+   margin-left: 106px;
+}
