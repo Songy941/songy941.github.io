@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300|Annie+Use+Your+Telescope|Exo+2:200,300');
 
+
 body {
    background: white;
    font-family: 'Alegreya Sans SC', sans-serif;
@@ -11,16 +12,27 @@ body {
 }
 
 #pagetitle{
+   display: block;
+   height: 80px;
    font-family: 'Annie Use Your Telescope', cursive;
    font-weight: 60px;
    font-size: 90px;
    margin-left: 100px;
+   margin-top: 60px;
+}
+
+#logo {
+  margin-top: 90px;
+  margin-left: 44.8%; 
+  width: 120px;
+  height: 160px;
 }
 
 nav {
+    margin-top: 70px;
     background: black;
     color: white ;
-    height: 40px;
+    height: 51px;
 }
 
 nav ul {
@@ -31,16 +43,75 @@ nav ul {
 
 nav ul li{
     display: inline-block;
-    width: 33%;
+    width: 33.3%;
     height: 100%;
+    margin-bottom: 60px;
+
 }
 
+nav ul li a{
+  display: block;
+  margin-left: 40%;
+  width: 60px;
+  height: 22px;
+  padding: 5px;
+  margin-top: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border: solid 4px rgba(0, 0, 0, 0);
+  transition: all 0.1s ease-in-out;
+  text-align: center;
+}
 
+nav ul li a:hover{
+  color: white;
+  border: solid 2px white;
+  font-size: 20px;
+}
+
+#redhome{
+  color: rgb(208,2,27);
+  display: block;
+  width: 60px;
+  height: 22px;
+  border: solid 2px rgb(208,2,27);
+}
+
+#redwork{
+  color: rgb(208,2,27);
+  display: block;
+  width: 60px;
+  height: 22px;
+  border: solid 2px rgb(208,2,27);
+}
+
+#redabout{
+  color: rgb(208,2,27);
+  display: block;
+  width: 60px;
+  height: 22px;
+  border: solid 2px rgb(208,2,27);}
+
+.li3{
+  display: block;
+  width: 70px;
+  height: 20px;
+  margin-left: 33%;
+  color: white;
+  font-size: 20p;
+}
+
+.foot:hover{
+  color: white;
+  text-decoration: underline;
+  border: solid 2px black;
+  font-size: 20px;
+}
 
 .div2{
    display: block;
    color: white;
-   margin-top: 8px;
    font-size: 20px;
    text-decoration: none;
    line-height: ;
@@ -48,14 +119,160 @@ nav ul li{
 }
 
 .div1{
-   margin-left: 106px;
+   margin-left: 120px;
 }
 
 .div3{
+   margin-top: 40px;
    font-family: 'Exo 2', sans-serif;
-   margin-left: 106px;
+   margin-left: 20%;
+   margin-right: 20%;
+   text-align: center;
 }
 
 .div4{
-   margin-left: 106px;
+   margin-left: 120px;
 }
+
+/*WORK WORK WORK WORK WORK 
+*/
+
+#grids{
+  margin-top: 40px;
+  width: 100%;
+  background: white;
+  margin-left: 10%
+}
+
+#grids a{
+  display: inline-block;
+  width: 35%;
+  margin-left: 3%;
+  height: 400px;
+  margin-top: 40px;
+}
+
+.box{
+  width: 100%;
+  height:100%;
+  background: grey;
+  cursor: pointer;
+}
+
+#box-1{
+  background: url("../img/david.jpeg");
+  background-size: 92%;
+  position: relative;
+  background-position: center;
+  transition: all 0.3s linear;
+  filter: grayscale(1);
+}
+
+#box-1:hover{
+  filter: grayscale(0);
+  background-size: 95%;
+}
+
+#box-2{
+  background: url("../img/ham0.png");
+  background-size: 130%;
+  position: relative;
+  background-position: center;
+  transition: all 0.3s linear;
+  filter: grayscale(1);
+}
+
+#box-2:hover{
+  filter: grayscale(0);
+  background-size: 133%;
+}
+
+#box-3{
+  background: url("../img/earlsposter0.png");
+  background-size: 140%;
+  position: relative;
+  background-position: center;
+  transition: all 0.3s linear;
+  filter: grayscale(1);
+}
+
+#box-3:hover{
+  filter: grayscale(0);
+  background-size: 150%;
+}
+
+#box-4{
+  background: url("../img/detail0.png");
+  background-size: 149%;
+  position: relative;
+  background-position: center;
+  transition: all 0.3s linear;
+  filter: grayscale(1);
+}
+
+#box-4:hover{
+  filter: grayscale(0);
+  background-size: 153%;
+}
+
+
+.davidbox{
+  margin-left: 28%;
+  margin-top: 80px;
+}
+
+.earlscourt{
+  margin-left: 16%;
+  margin-top: 80px;
+}
+
+.hambox{
+  margin-left: 10%;
+  margin-top: 80px;
+}
+
+/*ABOUT ABOUT ABOUT ABOUT
+*/
+#me4{
+  width: 50%;
+  height: 400px;
+  margin-left: 25%;
+  margin-top: 80px;
+  background: url("../img/me4.jpg");  
+  background-size: 100%;
+  background-position: center;
+}
+
+.row{
+  display: flex;
+}
+
+.work-title{
+  display: inline-block;
+  width:100%;
+  height: 40%;
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+  color:white;
+  transition: all 0.3s linear;
+}
+
+.work-title:hover{
+  opacity: 1;
+}
+
+.work-title p{
+  height:100%;
+  line-height: 100%;
+  margin-top: 8%;
+  margin-left: 5%
+}
+
+
+
+
+
+
+
+
+
