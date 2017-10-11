@@ -1,0 +1,122 @@
+
+<script src ='jquery-3.2.1.min.js'></script>
+<script src = 'tracery.js'></script>
+
+
+<head>
+	<title>The Generator</title>
+	<h1 id="title">Warning! -- Spam Site</h1>
+</head>
+
+<body>
+<nav>
+	<button id="click"> click me </button>
+	<button id="doNot"> DO NOT CLICK </button>
+	<button id="random"> A nice button </button>
+</nav>
+
+<div  class="imgs">
+<img id="img1" src="./img/0.jpg"/>
+<img id="img2" src="./img/6.jpg"/>
+<img id="img3" src="./img/14.jpg">
+</div>
+
+</body>
+
+
+
+<script>
+//-------------------------------------Title------------------------------------------
+	var grammarObj = {
+		'Sentence' : ['#warn#! #description#'],
+		'warn' : ['Warning', 'Watch out', 'Oh no', 'Be careful', 'Attention'],
+		'description' : ['This site may harm your eyes', 'Suspected advertisement site', '恶意广告页', 'This site is defaced', 'Ads found', 'Not a real phishing site']
+	}
+
+
+	var grammar = tracery.createGrammar(grammarObj)
+	function generate(){
+		var t = grammar.flatten('#Sentence#')
+		$('h1').text(t);
+	}
+
+	$('#title').css({'margin-left':'5%'})
+//-------------------------------------Buttons----------------------------------------
+	$('#click').css({'margin-left':'10%'})
+	$('#click').css({'background':'orange'})
+
+	$('#random').css({'margin-left':'15%'})
+	// $('#random').css({'border':'none'})
+
+
+	$('#doNot').click(generate)
+	$('#doNot').css({'margin-left':'20%'})
+	$('#doNot').css({'background':'orange'})
+
+
+
+	$('body').css('background-color', 'red')
+	$('#title').css('color','yellow')
+	$('#title').css('font-size','60px')
+	$('nav button').css('color', 'blue')
+
+	$('#doNot').css('width', '20%')
+	$('#doNot').css('font-size', '30px')
+
+	$('#doNot').hover(function(){
+	  console.log($(this).css('color'))
+
+	  if($(this).css('color') == 'rgb(0, 0, 255)'){
+	    $(this).css('color', 'red')
+	    $(this).css('font-size','40px')
+	    $(this).closest(".img").css("z-index", 1);
+		// this is where the popping out effect happens
+	    $(this).animate({ width: "40%", height: "10%", left: "-=100", top: "-=400" }, "fast");
+	  }else{
+	    $(this).css('color', 'blue')
+	    $('#doNot').css('font-size', '30px')
+	    $(this).closest(".img").css("z-index", 0);
+	    $(this).animate({ width: "20%", height: "6%", left: "+=55", top: "+=55" }, "fast");
+	  }
+
+	  // $(this).css('color', 'pink')
+	  // $(this).css('color', 'blue')
+	})
+
+	$('#click').hover(function(){
+		$(this).toggle({effect: "scale", percent: "90%"});
+	})
+
+
+
+//-------------------------------------images---------------------------------------
+
+$('.imgs').css({'margin-top':'2%'})
+$('.imgs').css({'margin-left':'3%'})
+
+
+var adsimages1 = ["./img/0.jpg", "./img/1.jpg", "./img/2.jpg", "./img/3.jpg", "./img/4.jpg", "./img/5.gif", "./img/6.jpg","./img/7.jpg"];
+var adsImg1 = choice(adsimages1)
+$('#img1').attr('src', adsImg1)
+
+
+function choice(arr){
+  return arr[Math.floor(Math.random() * arr.length)]
+}
+
+var adsimages2 = ["./img/8.jpg", "./img/9.jpg", "./img/10.jpg", "./img/11.jpg","./img/12.jpg","./img/13.jpg"]
+var adsImg2 = choice(adsimages2)
+$('#img2').attr('src', adsImg2)
+
+var adsimages3 = ["./img/14.jpg", "./img/15.jpg", "./img/16.jpg", "./img/17.jpg","./img/18.jpg","./img/19.jpg"]
+var adsImg3 = choice(adsimages3)
+$('#img3').attr('src', adsImg3)
+
+
+</script>
+
+
+
+
+
+
