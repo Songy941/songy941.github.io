@@ -7,7 +7,7 @@ var dogf;
 
 function preload() {
   dogo = loadImage("http://68.media.tumblr.com/tumblr_m9wj12iKGd1rfjowdo1_500.gif");
-  console.log(loadddd);
+  console.log("loadddd");
 
 }
 
@@ -28,7 +28,7 @@ function draw() {
   push();
     translate(150, 150);
     rotate(radians(45));
-    image(img, 0, 0, 200, 200);
+    image(dogo, 0, 0, 200, 200);
   pop();
 }
 
