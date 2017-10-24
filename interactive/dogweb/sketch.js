@@ -6,7 +6,7 @@ var dogd;
 var dogf;
 
 function preload() {
-  dogo = loadImage("https://i.pinimg.com/564x/50/0f/b6/500fb6a15bd123ef2fd59e601d2e59c8.jpg");
+  dogo = loadImage("http://68.media.tumblr.com/tumblr_m9wj12iKGd1rfjowdo1_500.gif");
   console.log(loadddd);
 
 }
