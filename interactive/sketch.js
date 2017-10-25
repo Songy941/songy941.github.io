@@ -83,7 +83,7 @@ function draw() {
     fill(random(100, 220),random(10), random(200));
     rect(xa, ya, 15, 10);
     
-    ya = ya + random(-15, 10);
+    ya = ya + random(-15, 15);
     xa = xa + 10;
     
     if (xa > width/1.3) {
