@@ -122,7 +122,7 @@ function draw() {
     
     if (xd > width/1.3) {
       xd = width/4.5;
-      yd = 340;
+      yd = 530;
     } 
   }
 
