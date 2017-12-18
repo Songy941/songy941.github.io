@@ -26,15 +26,18 @@ var express = require('express'),
     url = require('url');
     var bodyParser = require('body-parser');
 var app = express();
+app.listen(8080);
+
 
 app.use('/public', express.static(__dirname + '/public'));  
 app.use(express.static(__dirname + '/public')); 
-var jsonParser = bodyParser.json();
+// var jsonParser = bodyParser.json();
+app.use(bodyParser.json())
 
-app.post('/receive', jsonParser, function(request, respond) {
+app.post('/receive', function(request, respond) {
 		console.log(request.body)
 		client.messages.create({
-	    body: 'hi hi',
+	    body: 'Hi! You have successfully signed up for If I Were You!',
 	    to: request.body.number,  // Text this number
 	    from: '+16468469172' // From a valid Twilio number
 	})
@@ -64,4 +67,3 @@ app.post('/receive', jsonParser, function(request, respond) {
 
 });
 
-app.listen(8080);
