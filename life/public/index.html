@@ -1,0 +1,88 @@
+<!-- <html>
+<body>
+
+<form action="/action_page.php">
+  Telephone:
+  <input type="tel" name="usrtel">
+  <input type="submit">
+</form>
+
+<p><b>Note:</b> type="tel" is only supported in Safari 8 and newer versions.</p>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+	<script src ='jquery-3.2.1.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Acme|Assistant:300|Barlow+Semi+Condensed|Handlee" rel="stylesheet">
+
+<head>
+	<title>If I Were You</title>
+</head>
+<body>
+<div>
+	<nav>
+		<a href="index.html" id="greenhome"><img src="img/if.png" id="logo"></a>
+		<ul>
+			<li><a href="#" id="greenhome">HOME</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+		</ul>
+	</nav>
+</div>
+	
+<div>
+	<img src="img/nyc.jpeg" id="bgimg">
+</div>
+
+<div>
+	<h1 id="title">If I Were You</h1>
+	<p id="intro"> -- Experience being another person in New York city!<br> All stories below were collected from people currently living in New York.</p>
+</div>
+
+<div>
+	 <div id="grids">
+	 	<div>
+            <a href="andreas.html"><div class="box" id="box-1">
+                <div class="work-title">
+                <h2 class = "peoplename">Andreas </h2>
+                    <p>How about trying to be an extremely punctual person?<br><br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Learn More</p>
+                </div>
+            </div></a>
+            <a href="abigail.html"><div class="box" id="box-2">
+                <div class="work-title">
+                <h2  class = "peoplename">Abigail </h2>
+                    <p> Experience the morning of this young design student!<br><br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Learn More</p>
+                </div>
+            </div></a>
+	            <a href="selena.html"><div class="box" id="box-3">
+	            <div class="work-title">    
+	            <h2 class = "peoplename">Selena </h2> 
+                <p>What does it feel like being a 10-year-old again? <br><br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Learn More</p>
+                </div>
+            </div></a>
+           </div>
+        </div>
+
+</div>
+
+</body>
+</html>
+
+<!-- ===============================================-->
+<script>
+function submitform(){
+	var data= {};
+	data.name = $('#nameInput').val()
+	data.number = $('#numberInput').val()
+	console.log(data)
+	// data.choice = nameofchoice
+	$.post("/receive", data);
+}
+	
+
+
+
+</script>

@@ -1,0 +1,243 @@
+#logo{
+  background-size: 20%;
+  width: 5%;
+  display: inline-block;
+  position: absolute;
+  margin-left: 5%;
+}
+
+
+
+
+nav {
+    margin-top: 0;
+    background: white;
+    color: white;
+    height: 51px;
+}
+
+nav ul {
+   height: 100%;
+   display: flex;
+   padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 15%;
+    height: 100%;
+    margin-bottom: 60px;
+}
+
+nav ul li a{
+  display: block;
+  margin-left: 110%;
+  width: 60px;
+  height: 22px;
+  padding: 5px;
+  margin-top: 8px;
+  color: rgb(168,168,168);
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.1s ease-in-out;
+  text-align: center;
+}
+
+nav ul li a:hover{
+  color: rgb(14, 73, 15);
+  font-size: 15px;
+}
+
+#greenhome{
+  color: rgb(14, 73, 15);
+}
+
+#greenabout{
+  color: rgb(14, 73, 15);  
+}
+
+#bgimg{
+  max-width:100%;
+  height:auto;
+  z-index: -11;
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+
+#title{
+  margin-left: 5%;
+  margin-top: 12%;
+  color: white;
+  font-size: 100px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#intro{
+  margin-left: 5%;
+  margin-top: 0;
+  color: white;
+  font-size: 20px;
+  font-family: 'Assistant', sans-serif;
+
+}
+
+/*.row{
+  margin-left: 0;
+  width: 100%;
+  display: flex;
+}
+*/
+#grids{
+  margin-top: 10%;
+  width: 100%;
+  margin-left: 0;
+}
+
+#grids a{
+  display: inline-block;
+  width: 33%;
+  margin-left: 0;
+  height: 30%;
+  margin-top: 10%;
+}
+
+.box{
+  display:inline-block;
+  width: 33%;
+  height:29%;
+  margin-left: 0;
+  background: grey;
+  cursor: pointer;
+}
+
+#box-1{
+  background: rgba(26,99,42,0.75);
+  /*background-size: 92%;*/
+  position: absolute;
+  /*background-position: center;*/
+  transition: all 0.3s linear;
+  /*filter: grayscale(0);*/
+}
+
+
+
+#box-2{
+  background: rgba(198, 166, 37,0.7);
+  /*background-size: 92%;*/
+  position: absolute;
+  /*background-position: center;*/
+  transition: all 0.3s linear;
+  /*filter: grayscale(0);*/
+}
+
+
+
+#box-3{
+  background: rgba(26, 49, 99, 0.75);
+  /*background-size: 92%;*/
+  position: absolute;
+  /*background-position: center;*/
+  transition: all 0.3s linear;
+  /*filter: grayscale(0);*/
+}
+
+
+.peoplename{
+  color:white;
+  margin-left: 5%;
+  margin-top: 5%;
+  font-family: 'Assistant', sans-serif;
+}
+
+
+
+.work-title{
+  display: inline-block;
+  width:100%;
+  height: 100%;
+  background: rgba(0,0,0,0);
+  opacity: 1;
+  color:white;
+  transition: all 0.3s linear;
+  position: relative;
+}
+
+.work-title:hover{
+  background: rgba(0,0,0,0.5);
+}
+
+.work-title p{
+  height:100%;
+  line-height: 100%;
+  margin-top: 8%;
+  margin-left: 5%
+}
+
+
+
+
+/*-----------------------------------------ABOUT------------------------------------*/
+
+#aboutPage{
+  margin-left: 17%;
+  margin-top: 5%;
+  width:40%;
+}
+
+
+.aboutTitle{
+  color: white;
+  font-size: 30px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+
+
+.aboutContent{
+  color: white;
+  font-size: 14px;
+}
+
+
+/*-----------------------------------------Andreas------------------------------------*/
+
+#andreasPage{
+  margin-top: 10%;
+  margin-left: 35%;
+}
+
+.andreasContent{
+  color: rgb(23, 86, 53);
+  font-size: 14px;
+}
+
+.andreasTitle{
+  color: rgb(198, 166, 37);  
+  font-size: 28px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 20%;
+    margin-top: 10%;
+    margin-left: 7%;
+    border: solid 3px rgba(255,255,255,0.9);
+    position: absolute;
+
+}
+
+.signup{
+  color: rgb(23, 86, 53);
+  font-size: 28px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#signupbox{
+/*  background: rgba(198, 166, 37, 0.4);  
+*/  width: 51%;
+  margin-top: 2px;
+}
+
+
