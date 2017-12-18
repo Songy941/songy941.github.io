@@ -6,6 +6,8 @@ var authToken = 'efefea32b92630cc33492db9716f0027';   // Your Auth Token from ww
 var twilio = require('twilio');
 var client = new twilio(accountSid, authToken);
 
+var db = require("./data.json");
+
 // var mediaUrl = new List<Uri>() {
 //             new Uri("http://www.example.com/hearts.png");
 //         };
@@ -32,7 +34,8 @@ app.listen(8080);
 app.use('/public', express.static(__dirname + '/public'));  
 app.use(express.static(__dirname + '/public')); 
 // var jsonParser = bodyParser.json();
-app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false}));
+app.use(bodyParser.json());
 
 app.post('/receive', function(request, respond) {
 		console.log(request.body)
@@ -45,25 +48,27 @@ app.post('/receive', function(request, respond) {
 
 	console.log("hi");
 
+db.users.push(request.body);
+fs.writeFile("data.json", JSON.stringify(db), "utf8");
 
-    var body= "";
-    filePath = __dirname + '/public/data.txt';
-	fs.readFile(filePath, function read(err, fileData){
-		if(err){
-			throw err;
-		}
-		body = fileData;
+ //    var body= "";
+ //    filePath = __dirname + '/public/data.txt';
+	// fs.readFile(filePath, function read(err, fileData){
+	// 	if(err){
+	// 		throw err;
+	// 	}
+	// 	body = fileData;
 
-		request.on('data', function(data) {
-	        body += data;
-	    });
+	// 	request.on('data', function(data) {
+	//         body += data;
+	//     });
 
-	    request.on('end', function (){
-	        fs.appendFile(filePath, body, function() {
-	            respond.end();
-	        });
-	    });
-	})
+	//     request.on('end', function (){
+	//         fs.appendFile(filePath, body, function() {
+	//             respond.end();
+	//         });
+	//     });
+	// })
 
 });
 
